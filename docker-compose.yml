@@ -1,0 +1,47 @@
+# version: "3.8"
+# services:
+#   postgres:
+#     image: postgres:15
+#     container_name: postgres
+#     restart: always
+#     environment:
+#       POSTGRES_DB: analytics
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: postgres
+#     volumes:
+#       - pgdata:/var/lib/postgresql/data
+#       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+#     ports:
+#       - "5432:5432"
+
+#   dbt:
+#     build:
+#       context: ./dbt
+#       dockerfile: ../Dockerfile.dbt
+#     container_name: dbt
+#     depends_on:
+#       - postgres
+
+#   streamlit:
+#     build:
+#       context: ./streamlit_app
+#       dockerfile: ../Dockerfile.streamlit
+#     container_name: streamlit
+#     depends_on:
+#       - postgres
+#     ports:
+#       - "8501:8501"
+
+# volumes:
+#   pgdata:
+
+
+version: '3.8'
+services:
+  ocr_service:
+    build: .
+    container_name: ocr_container
+    volumes:
+      - ./data:/app/data  # Mount local folder to container
+    environment:
+      - TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata
