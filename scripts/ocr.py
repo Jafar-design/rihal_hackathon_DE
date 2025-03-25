@@ -75,7 +75,7 @@ def convert_image_to_text(file):
     return text
 
 
-def get_text_from_any_pdf(pdf_file):
+def extract_text(pdf_file):
     """
     @desc: this function is our final system combining the previous functions
     
@@ -98,4 +98,4 @@ def get_text_from_any_pdf(pdf_file):
 
 path_to_pdf = 'data/district_info.pdf'
 
-print(get_text_from_any_pdf(path_to_pdf))
+print(extract_text(path_to_pdf))

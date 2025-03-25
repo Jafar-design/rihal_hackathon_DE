@@ -98,4 +98,4 @@ def get_text_from_any_pdf(pdf_file):
 
 path_to_pdf = '../data/district_info.pdf'
 
-print(get_text_from_any_pdf(path_to_pdf))
+get_text_from_any_pdf = get_text_from_any_pdf(path_to_pdf)
