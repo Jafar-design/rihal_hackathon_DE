@@ -1,1 +1,0 @@
-{"_invocation_id": "397bd501-04e5-4a13-ac22-e46e4f9294d4", "linked": {"0": {"name": "model.my_dbt_project.stg_districts", "type": "model", "succ": [2]}, "1": {"name": "model.my_dbt_project.stg_crime_reports", "type": "model", "succ": [2]}, "2": {"name": "model.my_dbt_project.transformed_data", "type": "model"}}}

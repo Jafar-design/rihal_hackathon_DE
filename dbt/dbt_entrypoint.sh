@@ -16,7 +16,7 @@ dbt docs generate
 
 echo "✅ dbt documentation generated successfully."
 
-cp -r target/* docs/
+cp -r target/* ../docs/
 
 echo "🔄 Generating lineage..."
 

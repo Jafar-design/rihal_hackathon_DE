@@ -33,6 +33,7 @@ services:
     container_name: dbt_container
     volumes:
       - ./dbt:/app/dbt
+      - ./docs:/app/docs
     depends_on:
       - postgres
     ports:

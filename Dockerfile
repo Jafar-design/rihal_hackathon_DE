@@ -31,6 +31,7 @@ COPY scripts/ /app/scripts/
 
 # Copy dbt project files
 COPY dbt /app/dbt
+COPY docs /app/docs
 # Set working directory to dbt project
 WORKDIR /app/dbt  
 
