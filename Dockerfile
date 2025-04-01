@@ -41,8 +41,6 @@ RUN chmod +x /app/dbt_entrypoint.sh
 # Set the Tesseract language data environment variable
 ENV TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata
 
-EXPOSE 8081
-
 # Set the command to run the script
 CMD ["bash"]
 
