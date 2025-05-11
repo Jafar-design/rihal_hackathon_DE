@@ -14,19 +14,19 @@ services:
     ports:
       - "5433:5432"  # Map container’s 5432 to host’s 5433
 
-  ocr_service:
-    build: .
-    container_name: ocr_container
-    volumes:
-      - ./data/raw:/app/data/raw
-      - ./data/transformed:/app/data/transformed
-    environment:
-      - TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata
-      - DATABASE_HOST=postgres  # Ensure the app connects to 'postgres'
-      - DATABASE_PORT=5432
-    depends_on:
-      - postgres
-    command: ["python", "/app/scripts/main.py"]
+  # ocr_service:
+  #   build: .
+  #   container_name: ocr_container
+  #   volumes:
+  #     - ./data/raw:/app/data/raw
+  #     - ./data/transformed:/app/data/transformed
+  #   environment:
+  #     - TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata
+  #     - DATABASE_HOST=postgres  # Ensure the app connects to 'postgres'
+  #     - DATABASE_PORT=5432
+  #   depends_on:
+  #     - postgres
+  #   command: ["python", "/app/scripts/main.py"]
 
   dbt:
     build: .

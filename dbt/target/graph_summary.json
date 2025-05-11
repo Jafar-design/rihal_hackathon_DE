@@ -1,1 +1,1 @@
-{"_invocation_id": "4b73501c-a006-418c-ba7e-eb2f36096a0f", "linked": {"0": {"name": "model.my_dbt_project.stg_districts", "type": "model", "succ": [2]}, "1": {"name": "model.my_dbt_project.stg_crime_reports", "type": "model", "succ": [2]}, "2": {"name": "model.my_dbt_project.transformed_data", "type": "model"}}}
+{"_invocation_id": "d2499af0-dcea-4095-86ae-0f4f7dfb40a6", "linked": {"0": {"name": "seed.my_dbt_project.lms_engagement_data", "type": "seed"}}}

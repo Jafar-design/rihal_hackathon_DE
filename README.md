@@ -7,6 +7,10 @@ This project involves setting up **dbt (Data Build Tool)** inside a Docker conta
 
 ![alt text](image.png)
 
+## Solution to the Assessment
+### Question 1
+
+
 
 ## Setup Instructions
 
